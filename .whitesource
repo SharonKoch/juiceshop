@@ -1,6 +1,7 @@
 {
   "scanSettings": {
     "configMode": "AUTO",
+    "enableSAST": true,
     "configExternalURL": "",
     "projectToken": "",
     "baseBranches": []

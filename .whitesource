@@ -1,14 +1,25 @@
 {
   "scanSettings": {
     "configMode": "AUTO",
-    "enableSAST": true,
     "configExternalURL": "",
     "projectToken": "",
     "baseBranches": []
   },
+  "scanSettingsSAST": {
+    "enableScan": true,
+    "scanPullRequests": true,
+    "incrementalScan": true,
+    "baseBranches": [],
+    "snippetSize": 10
+  },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
-    "displayMode": "diff"
+    "displayMode": "diff",
+    "useMendCheckNames": true
+  },
+  "checkRunSettingsSAST": {
+    "checkRunConclusionLevel": "failure",
+    "severityThreshold": "high"
   },
   "issueSettings": {
     "minSeverityLevel": "LOW",
@@ -18,5 +29,13 @@
     "workflowRules": {
       "enabled": true
     }
-  }
+  },
+   "imageSettings":{
+       "imageTracing":{
+           "enableImageTracingPR": false,
+           "addRepositoryCoordinate": false,
+           "addDockerfilePath": false,
+           "addMendIdentifier": false
+       }
+   }
 }
